@@ -22,8 +22,8 @@ function Home({
         .map((item, index) =>(
         <Card 
             key={index}
-            onPlus={(obj) => onAddToCart(obj)} 
-            onClickFavorite={onAddFavorite}
+            onPlus={onAddToCart} 
+            onFavorite={onAddFavorite}
             loading={isLoading}
             {...item}
             />
